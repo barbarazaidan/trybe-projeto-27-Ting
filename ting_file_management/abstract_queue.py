@@ -1,5 +1,7 @@
 from abc import ABC, abstractmethod
 
+# inicia projeto
+
 
 class AbstractQueue(ABC):
     @abstractmethod
