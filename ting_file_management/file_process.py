@@ -2,7 +2,7 @@
 # gerada pela função txt_importer
 # em um dicionário que será armazenado dentro da fila.
 
-from ting_file_management.file_management import txt_importer
+# from ting_file_management.file_management import txt_importer
 
 
 def process(path_file, instance):
