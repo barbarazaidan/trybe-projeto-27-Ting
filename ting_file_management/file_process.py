@@ -3,6 +3,7 @@
 # em um dicionário que será armazenado dentro da fila.
 
 from ting_file_management.file_management import txt_importer
+import sys
 
 
 def process(path_file, instance):
@@ -39,4 +40,8 @@ def remove(instance):
 # Essa função é capaz de apresentar as informações
 # superficiais de um arquivo processado.
 def file_metadata(instance, position):
-    """Aqui irá sua implementação"""
+    try:
+        element = instance.search(position)
+        print(element)
+    except IndexError:
+        sys.stderr.write("Posição inválida")
