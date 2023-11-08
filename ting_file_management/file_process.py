@@ -28,7 +28,12 @@ def process(path_file, instance):
 
 # Essa função é capaz de remover o primeiro arquivo processado
 def remove(instance):
-    """Aqui irá sua implementação"""
+    if instance.__len__() == 0:
+        print("Não há elementos")
+    else:
+        element = instance.dequeue()
+        name_element = element["nome_do_arquivo"]
+        print(f"Arquivo {name_element} removido com sucesso")
 
 
 # Essa função é capaz de apresentar as informações
