@@ -1,3 +1,5 @@
+# esta função que verifica a existência
+# de uma palavra em todos os arquivos processados
 def exists_word(word, instance):
     list = []
     word = word.lower()
